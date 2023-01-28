@@ -1,0 +1,22 @@
+.login-page{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+    height:100vh;
+    background:url('https://c4.wallpaperflare.com/wallpaper/574/771/608/artistic-lake-blue-night-wallpaper-preview.jpg');
+    background-size:cover;
+}
+
+.login-form-outer{
+    background:rgba(255,255,255,0.15);
+    box-shadow: 0 8px 32px 0 rgba(31,38,135,0.37);
+    backdrop-filter: blur(21px);
+    padding:30px 100px 30px 100px;
+    border-radius: 16px;
+}
+
+.login-heading{
+    text-align: center;
+    font-size:40px;
+}

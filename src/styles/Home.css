@@ -1,0 +1,9 @@
+.total-home{
+    display:flex;
+    justify-content: center;
+    margin-top:5%;
+}
+
+.heading{
+    font-size:50px;
+}
