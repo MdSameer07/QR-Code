@@ -9,6 +9,7 @@ export const Body = () =>{
             <div className = 'lower-body'>
                 Register Now to know whether the product you bought is original or fake!!
             </div>
+            <div>Hello Bot Tree...</div>
         </div>
     )
 }
