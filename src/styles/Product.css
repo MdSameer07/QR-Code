@@ -1,0 +1,22 @@
+html{
+    height: 100%;
+}
+.login-box{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 400px;
+    height: 280px;
+    padding: 40px;
+    transform: translate(-50%,-10%);
+    background: linear-gradient(#006992,#2E1760);
+    box-sizing: border-box;
+    box-shadow: 0 10px 25px rgba(0,0,0,6);
+    border-radius: 10px;
+}
+.login-box h2{
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align:center;
+}
