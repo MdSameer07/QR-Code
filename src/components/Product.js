@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
-import { addMethod } from 'yup';
-import '../styles/Product.css'
-import { Body } from './Body';
+import '../styles/Product.css';
+import { useNavigate } from 'react-router-dom';
 const Product = () => {
   const [data,setData]=useState({
     companyname:'',
@@ -9,6 +8,7 @@ const Product = () => {
     productname:'',
     productid:''
   });
+  const navigate = useNavigate();
   const changeHandler= e=>{
     setData({...data,[e.target.name]:e.target.value})
   }
@@ -18,12 +18,13 @@ const Product = () => {
     {
       method:'POST',
       body:JSON.stringify(data),
-      headers : {"Content-Type" : "application/json; charset=UTF-8" }
+      headers : {"Content-Type" : "application/json; charset=UTF-8"}
     }
-    ).then(res=>alert('Data posted successfully')).catch(err=>console.log(err))
-  }
-  return (
-    
+    )
+    .then(alert("data pushed succesfully"))
+    .then(res=>navigate('/Home'));
+  };
+  return(
     <div className='login-box'> 
         <center>
         <h2>Product Credentials </h2>
