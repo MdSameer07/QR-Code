@@ -4,7 +4,7 @@ import { Fragment, useState } from "react";
 import { useNavigate } from "react-router";
 import { NavLink } from "react-router-dom";
 import * as yup from 'yup';
-import { auth } from '../FireBase';
+import { auth } from './FireBase';
 import "../styles/RegisterForm.css"
 
 

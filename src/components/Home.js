@@ -11,7 +11,7 @@ export const Home = () =>{
         </div>
             <div className='headings'>
                 <center> 
-                    <h4>  </h4>    
+                    <h4></h4>    
                     <Product />          
                 </center> 
             </div>
