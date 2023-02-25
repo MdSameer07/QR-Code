@@ -1,0 +1,14 @@
+html{
+  height: 100%;
+}
+body {
+  background: linear-gradient(#bfff0021,#601e1700);
+  }
+.row {
+  display: flex;
+}
+.column {
+  flex: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}

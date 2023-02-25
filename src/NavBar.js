@@ -1,8 +1,8 @@
 import { useEffect } from "react"
 import { NavLink, useNavigate } from "react-router-dom"
 import { useRecoilState } from "recoil"
-import { auth } from "./FireBase"
-import { UserDetails } from "../Recoil/UserDetails"
+import { auth } from "../FireBase"
+import { UserDetails } from "./Recoil/UserDetails"
 import '../styles/NavBar.css'
 
 export const NavBar = () =>{
@@ -11,6 +11,7 @@ export const NavBar = () =>{
     const navigate = useNavigate();
 
     useEffect(()=>{
+
         auth.onAuthStateChanged((user)=>{
             setUser(user.displayName)
         })

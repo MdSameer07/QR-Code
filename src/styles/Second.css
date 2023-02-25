@@ -1,10 +1,7 @@
 html{
     height: 100%;
 }
-body {
-    background-color: #dbfce9;
-    }
-.person{
+.personal{
     position: absolute;
     top: 40%;
     left: 50%;
@@ -12,7 +9,7 @@ body {
     height: 300px;
     padding: 40px;
     transform: translate(-50%,-10%);
-    background: linear-gradient(#05c4a459,#2d6017);
+    background: linear-gradient(#ae05c4,#171e60);
     box-sizing: border-box;
     box-shadow: 0 10px 25px rgba(0,0,0,6);
     border-radius: 10px;

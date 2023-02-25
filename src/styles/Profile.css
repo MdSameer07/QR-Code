@@ -13,13 +13,9 @@
     justify-content: center;
     align-items: center;
     border-radius:5px;
-    font-size:42px;
-    margin-top:20%;
+    font: size 20px;
+    margin: top 1px;
 }
 .name{
-    margin-top:7%;
-}
-
-.email{
-    margin-top:4%;
+    margin-top:1%;
 }

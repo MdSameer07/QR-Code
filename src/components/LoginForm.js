@@ -1,5 +1,5 @@
 import { Fragment, useState } from "react";
-import { auth } from "../FireBase";
+import { auth } from "./FireBase";
 import * as yup from "yup";
 import { useNavigate } from "react-router"
 import { signInWithEmailAndPassword } from "firebase/auth";
