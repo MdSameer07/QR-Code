@@ -12,7 +12,7 @@ function QRCodeGenerator() {
   const uniqueToken = date.valueOf();
 
   
-  const qrCodeData = JSON.stringify({token: uniqueToken, expires: expirationTime });
+  const qrCodeData = JSON.stringify({comapanyname:"google",proudctid:123456,productname:"iphone"});
   
   // Handler function to update state when QR code is scanned
   const handleScan = () => {

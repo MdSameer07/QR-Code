@@ -15,6 +15,7 @@ import QRCodeGenerator from "./components/QRCodeGenerator";
 import Log from "./components/Log"; 
 import Product from "./components/Product";
 import Second from "./components/Second";
+import Test from "./components/Test";
 const queryClient = new QueryClient()
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
       <QueryClientProvider client = {queryClient}>
         <NavBar/>
         <Routes>
-          <Route path='/' element = {<Log/>}/>
+          <Route path='/' element = {<Test />}/>
           <Route path='/login' element = {<ProtectedRoute2><LoginPage/></ProtectedRoute2>}/>
           <Route path='/register' element = {<ProtectedRoute2><RegisterPage/></ProtectedRoute2>}/>
           <Route path='/home' element = {<ProtectedRoute1><Home/></ProtectedRoute1>}/>
