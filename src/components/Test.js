@@ -12,7 +12,7 @@ const Test = () => {
     if(data && flag){ 
     //setResult(data)
     console.log(data);
-    //setFi(data["text"])
+    //setFi(data["te
     console.log(data["text"]);
     //console.log(data["text"]);
     setFlag(0) 
