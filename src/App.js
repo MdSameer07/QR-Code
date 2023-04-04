@@ -11,6 +11,11 @@ import { Home } from "./components/Home";
 import { Profile } from "./components/Profile";
 import {PagenotFound} from "./components/PagenotFound";
 import Showqr from "./Showqr";
+import QRCodeGenerator from "./components/QRCodeGenerator";
+import Log from "./components/Log"; 
+import Product from "./components/Product";
+import Second from "./components/Second";
+import Test from "./components/Test";
 const queryClient = new QueryClient()
 function App() {
   return (
@@ -18,12 +23,15 @@ function App() {
       <QueryClientProvider client = {queryClient}>
         <NavBar/>
         <Routes>
-          <Route path='/' element = {<Body/>}/>
+          <Route path='/' element = {<Test />}/>
           <Route path='/login' element = {<ProtectedRoute2><LoginPage/></ProtectedRoute2>}/>
           <Route path='/register' element = {<ProtectedRoute2><RegisterPage/></ProtectedRoute2>}/>
           <Route path='/home' element = {<ProtectedRoute1><Home/></ProtectedRoute1>}/>
           <Route path='/profile' element = {<ProtectedRoute1><Profile/></ProtectedRoute1>}/>
-          <Route path='/showqr' element ={<Showqr />}/>
+          <Route path='/second' element ={<Second />}/> 
+          <Route path='/showqr' element ={<Showqr />}/> 
+          <Route path='/qr' element={<QRCodeGenerator />} />
+          <Route path='/product' element={<Product/>}/>
           <Route path='*' element={<PagenotFound/>} />
         </Routes>
       </QueryClientProvider>
