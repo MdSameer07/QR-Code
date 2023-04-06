@@ -1,5 +1,4 @@
 import '../styles/Body.css'
-
 export const Body = () =>{
     return (
         <div className = 'total-body'>
