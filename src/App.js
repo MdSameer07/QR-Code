@@ -9,7 +9,7 @@ import { ProtectedRoute1 } from "./components/ProtectedRoute1";
 import { ProtectedRoute2 } from "./components/ProtectedRoute2";
 import { Home } from "./components/Home";
 import { Profile } from "./components/Profile";
-
+import {PagenotFound} from "./components/PagenotFound";
 const queryClient = new QueryClient()
 
 function App() {
@@ -23,10 +23,10 @@ function App() {
           <Route path='/register' element = {<ProtectedRoute2><RegisterPage/></ProtectedRoute2>}/>
           <Route path='/home' element = {<ProtectedRoute1><Home/></ProtectedRoute1>}/>
           <Route path='/profile' element = {<ProtectedRoute1><Profile/></ProtectedRoute1>}/>
+          <Route path='*' element={<PagenotFound/>} />
         </Routes>
       </QueryClientProvider>
     </RecoilRoot>
   );
 }
-
 export default App;
