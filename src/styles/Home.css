@@ -1,9 +1,11 @@
 .total-home{
     display:flex;
     justify-content: center;
-    margin-top:5%;
+    margin-top:2%;
 }
-
 .heading{
-    font-size:50px;
+    font-size:40px;
+}
+.headings{
+    font-size:18px;
 }
